@@ -9,7 +9,7 @@
   "scripts": {
     "build:cjs": "cross-env BABEL_ENV=cjs babel src/index.js --out-file dist/jtils.cjs.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "pre-publish": "npm build:cjs"
+    "prepublish": "npm build:cjs"
   },
   "repository": {
     "type": "git",
