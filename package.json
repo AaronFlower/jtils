@@ -2,12 +2,20 @@
   "name": "@aaronflower/jtils",
   "version": "0.0.1",
   "description": "A javascript utility tools.",
-  "main": "index.js",
+  "main": "dist/jtils.cjs.js",
+  "files": [
+    "dist/*.js"
+  ],
   "scripts": {
     "build:cjs": "cross-env BABEL_ENV=cjs babel src/index.js --out-file dist/jtils.cjs.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pre-publish": "npm build:cjs"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AaronFlower/jtils.git"
+  },
+  "author": "aaronflower",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.2.3",
