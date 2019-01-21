@@ -7,10 +7,8 @@
     "dist/*.js"
   ],
   "scripts": {
-    "build:cjs": "cross-env BABEL_ENV=cjs babel src/index.js --out-file dist/jtils.cjs.js",
     "test": "npx mocha --require @babel/register",
-    "test:watch": "npx mocha --require @babel/register --watch --recursive",
-    "prepare": "npm run build:cjs"
+    "test:watch": "npx mocha --require @babel/register --watch --recursive"
   },
   "repository": {
     "type": "git",
