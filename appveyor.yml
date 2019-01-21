@@ -1,5 +1,6 @@
-image: ubuntu
-
+environment:
+  nodejs_version: "10"
+  
 install:
 - npm install
 
