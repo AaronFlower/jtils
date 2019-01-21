@@ -1,5 +1,4 @@
-## JTils
-
+# JTils ![![Build Status(https://ci.appveyor.com/project/AaronFlower/jtils)]](https://img.shields.io/appveyor/ci/aaronflower/jtils.svg)
 1. Init the project, be careful of your version.
 ```bash
 npm init
